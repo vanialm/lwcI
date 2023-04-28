@@ -1,0 +1,15 @@
+<template>
+	<lightning-card title="Dados Estruturados" icon-name="standard:lead">
+		<div class="slds-box slds-theme_default">
+
+			<lightning-input label="Nome"          type="text"      name="firstname"     onchange={handleInputChange}></lightning-input>
+			<lightning-input label="Sobrenome"     type="text"      name="lastname"      onchange={handleInputChange}></lightning-input>
+			<lightning-input label="Email"         type="email"     name="email"         onchange={handleInputChange}></lightning-input>
+			<lightning-input label="Website"       type="website"   name="website"       onchange={handleInputChange}></lightning-input>
+			<lightning-input label="Empresa"       type="text"      name="company"       onchange={handleInputChange}></lightning-input>
+			<lightning-input label="Receita Anual" type="text"      name="annualrevenue" onchange={handleInputChange}></lightning-input><br/>
+			
+            <lightning-button variant="brand" label="Criar Lead" onclick={handleOnClick}></lightning-button>
+		</div>
+	</lightning-card>
+</template>
